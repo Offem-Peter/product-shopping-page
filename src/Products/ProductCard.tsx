@@ -1,4 +1,5 @@
 import { IoIosAddCircleOutline } from 'react-icons/io';
+import { LazyLoadImage } from 'react-lazy-load-image-component';
 
 import "./ProductCard.css";
 import { CartFunctionsType, CartType, ProductType } from './Types';
@@ -13,7 +14,12 @@ const ProductCard:React.FC<ProductCardProp> = (prop) => {
 
     return (
         <div className="product-card">
-            <img className="product-image" src={product.imageUrl} alt="asa" loading="lazy"/>
+            <LazyLoadImage
+                className="product-image"
+                alt={product.name}
+                effect="blur"
+                src={product.imageUrl}/>
+            {/* <img className="product-image" src={product.imageUrl} alt="asa" loading="lazy"/> */}
             <p className="product-name">{product.name.substring(0,50)}</p>
             <p className="product-price">${product.price}</p>
 
