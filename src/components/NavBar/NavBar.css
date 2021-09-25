@@ -1,0 +1,84 @@
+.nav-bar {
+  background: #fff;
+  height: 80px;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 2rem;
+  border-bottom: 1px solid #ebebeb;
+}
+
+.nav-bar h1 {
+  color: black;
+  font-weight: 500;
+  font-size: 33px;
+}
+
+.nav-link {
+  color: grey;
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+  padding: 0 8px;
+  height: 100%;
+  font-size: 12px;
+}
+
+.nav-link:active {
+  color: black;
+}
+
+.nav-link input {
+  width: 450px;
+  padding: 12px 20px;
+  margin: 8px 20px;
+  display: inline-block;
+  border: 1px solid #eeeeee;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+.nav-link input::placeholder {
+  color: #aeaeae;
+}
+
+.nav-items {
+  display: flex;
+  align-items: center;
+  margin-right: 10px;
+}
+
+.nav-items button {
+  border: 0;
+  background-color: #ec6661;
+  height: 30px;
+  width: 100px;
+  color: white;
+  font-weight: 400;
+  font-size: 14px;
+  border-radius: 5px;
+  margin: 0 15px;
+}
+
+.nav-item {
+  color: grey;
+  text-decoration: none;
+  padding: 0 10px;
+  /* height: 100%; */
+  font-size: 12px;
+  cursor: default;
+}
+
+.activeLink {
+  color: black;
+  font-weight: 500;
+}
+
+.nav-items .nav-icon {
+  font-size: 25px;
+  margin-top: 12px;
+  text-align: center;
+}
+
+.nav-items p {
+  margin-top: -25px;
+}
